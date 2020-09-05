@@ -1,0 +1,6 @@
+run_accession condition sample
+EA-1_S1_L003_R1_001 N2 A
+EA-2_S2_L003_R1_001 N2 B
+EA-4r_S4_L003_R1_001 CB4856 A
+EA-5_S5_L003_R1_001 CB4856 B
+

@@ -1,0 +1,11 @@
+title: "Nextflow RNA-seq pipeline"
+subtitle: "A pipeline for quantification of genomic features from short read data"
+
+report_header_info:
+    - Contact E-mail: 'yewangfaith@gmail.com'
+    - Application Type: 'RNA-seq'
+    - Project Type: 'Nextflow pipeline'
+
+custom_logo_url: 'https://www.nextflow.io'
+custom_logo_title: 'Center for Genomic Regulation'
+

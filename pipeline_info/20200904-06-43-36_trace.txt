@@ -1,0 +1,14 @@
+task_id	hash	native_id	process	name	status	exit	container	cpus	%cpu	memory	%mem	time	attempt	submit	start	complete	rss	vmem	rchar	wchar
+1	0d/d10978	75777	kal_index	kal_index	CACHED	0	-	1	98.2%	-	7.6%	-	1	2020-09-04 01:15:50.886	2020-09-04 01:15:50.914	2020-09-04 01:18:39.695	4.8 GB	4.9 GB	228.8 MB	1.4 GB
+10	4c/f854a3	190130	kal_mapping	kal_mapping (reads: null)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:43:54.335	2020-09-04 06:43:54.341	2020-09-04 06:43:59.629	-	-	-	-
+11	63/ca2b35	190132	kal_mapping	kal_mapping (reads: null)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:43:54.342	2020-09-04 06:43:54.441	2020-09-04 06:43:59.696	-	-	-	-
+9	7c/3b2157	190138	kal_mapping	kal_mapping (reads: null)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:43:54.355	2020-09-04 06:43:54.444	2020-09-04 06:43:59.699	-	-	-	-
+12	cf/9fd726	190229	kal_mapping	kal_mapping (reads: null)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:43:59.308	2020-09-04 06:43:59.347	2020-09-04 06:43:59.703	-	-	-	-
+8	cd/8553e1	190385	kal_mapping	kal_mapping (reads: null)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:43:59.337	2020-09-04 06:43:59.348	2020-09-04 06:43:59.706	-	-	-	-
+5	1b/b4c6b1	189630	fastqc	fastqc (null)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:43:54.035	2020-09-04 06:43:54.140	-	-	-	-	-
+4	28/26fc27	189633	fastqc	fastqc (null)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:43:54.046	2020-09-04 06:43:54.143	-	-	-	-	-
+3	33/8d35a3	189672	fastqc	fastqc (null)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:43:54.078	2020-09-04 06:43:54.144	-	-	-	-	-
+7	d0/88ac89	189698	fastqc	fastqc (null)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:43:54.088	2020-09-04 06:43:54.145	-	-	-	-	-
+2	48/c53433	189720	fastqc	fastqc (null)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:43:54.096	2020-09-04 06:43:54.146	-	-	-	-	-
+6	84/0611ec	189750	fastqc	fastqc (null)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:43:54.104	2020-09-04 06:43:54.147	-	-	-	-	-
+13	26/ef3fbd	190135	kal_mapping	kal_mapping (reads: null)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:43:54.349	2020-09-04 06:43:54.442	-	-	-	-	-

@@ -1,0 +1,4 @@
+N2	EA-1_S1_L003_R1_001	EA-1_S1_L003_R1_001.fastq.gz	S1	test_data/EA-1_S1_L003_R1_001.fastq.gz	seq_folder	N2_1	mRNAseq_1_N2
+N2	EA-2_S2_L003_R1_001	EA-2_S2_L003_R1_001.fastq.gz	S2	test_data/EA-2_S2_L003_R1_001.fastq.gz	seq_folder	N2_2	mRNAseq_2_N2
+CB4856	EA-4r_S4_L003_R1_001	EA-4r_S4_L003_R1_001.fastq.gz	S4	test_data/EA-4r_S4_L003_R1_001.fastq.gz	seq_folder	CB4856_1	mRNAseq_1_CB4856
+CB4856	EA-5_S5_L003_R1_001	EA-5_S5_L003_R1_001.fastq.gz	S5	test_data/EA-5_S5_L003_R1_001.fastq.gz	seq_folder	CB4856_2	mRNAseq_2_CB4856

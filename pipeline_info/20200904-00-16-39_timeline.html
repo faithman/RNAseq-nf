@@ -1,0 +1,214 @@
+<!doctype html>
+<!--
+  ~ Copyright 2013-2019, Centre for Genomic Regulation (CRG)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<script type="text/javascript">
+var prot = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Cscript src='" + prot + "code.jquery.com/jquery-latest.min.js' type='text/javascript' %3E%3C/script%3E"));
+document.write(unescape("%3Cscript src='" + prot + "d3js.org/d3.v3.min.js' charset='utf-8' type='text/javascript' %3E%3C/script%3E"));
+document.write(unescape("%3Cscript src='" + prot + "cdn.rawgit.com/nextflow-io/d3-timeline/82622c4cc35bac7283b3a317826b0709ac1ae476/src/d3-timeline.js' type='text/javascript' %3E%3C/script%3E"));
+</script>
+<style type="text/css">
+* {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.axis path,
+.axis line {
+fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-size: 10px;
+}
+
+div#timeline g text {
+  font-size: 13px;
+}
+
+text.timeline-label {
+  font-size: 13px;
+}
+
+#timeline2 .axis {
+  transform: translate(0px,30px);
+  -ms-transform: translate(0px,30px); /* IE 9 */
+  -webkit-transform: translate(0px,30px); /* Safari and Chrome */
+  -o-transform: translate(0px,30px); /* Opera */
+  -moz-transform: translate(0px,30px); /* Firefox */
+}
+
+.coloredDiv {
+  height:20px; width:20px; float:left;
+}
+
+#footer {
+  padding-top: 3em; color: #bfbfbf; font-size: 13px;
+}
+
+#footer a:visited {
+  color: #bfbfbf;
+  text-decoration: underline;
+}
+</style>
+<script type="text/javascript">
+var handler=null;
+// see https://github.com/mbostock/d3/wiki/Ordinal-Scales#category20c
+var colors = d3.scale.category20c().domain(d3.range(0,20)).range()
+
+function c0(index) { return "#9c9c9c"; }
+function c1(index) { return "#bdbdbd"; }
+function c2(index) { return colors[index % 16]; } // <-- note: uses only the first 16 colors
+
+var elapsed="2m 48s"
+var beginningMillis=1599149773356;
+var endingMillis=1599149968935;
+var data=[
+{"label": "kal_index", "times": [{"starting_time": 1599149801557, "ending_time": 1599149801619, "color":c1(0)}, {"starting_time": 1599149801619, "ending_time": 1599149902291, "color":c2(0), "label": "1m 41s \/ 1.2 GB"}, {"starting_time": 1599149902291, "ending_time": 1599149902420, "color":c1(0)}]},
+{"label": "qc_index (c)", "times": [{"starting_time": 1599149801575, "ending_time": 1599149801622, "color":c1(1)}, {"starting_time": 1599149801622, "ending_time": 1599149850315, "color":c2(1), "label": "48.9s \/ 176.4 MB"}, {"starting_time": 1599149850315, "ending_time": 1599149850458, "color":c1(1)}]},
+{"label": "fastqc (EA-1_S1_L003_R1_001)", "times": [{"starting_time": 1599149773368, "ending_time": 1599149773424, "color":c1(2)}, {"starting_time": 1599149773424, "ending_time": 1599149789096, "color":c0(2), "label": "15.9s \/ 3.1 MB \/ CACHED"}, {"starting_time": 1599149789096, "ending_time": 1599149789219, "color":c1(2)}]},
+{"label": "fastqc (EA-2_S2_L003_R1_001)", "times": [{"starting_time": 1599149773385, "ending_time": 1599149773428, "color":c1(2)}, {"starting_time": 1599149773428, "ending_time": 1599149788955, "color":c0(2), "label": "15.7s \/ 4.4 MB \/ CACHED"}, {"starting_time": 1599149788955, "ending_time": 1599149789095, "color":c1(2)}]},
+{"label": "fastqc (EA-5_S5_L003_R1_001)", "times": [{"starting_time": 1599149773378, "ending_time": 1599149773426, "color":c1(2)}, {"starting_time": 1599149773426, "ending_time": 1599149788980, "color":c0(2), "label": "15.8s \/ 5.3 MB \/ CACHED"}, {"starting_time": 1599149788980, "ending_time": 1599149789194, "color":c1(2)}]},
+{"label": "fastqc (EA-4r_S4_L003_R1_001)", "times": [{"starting_time": 1599149773356, "ending_time": 1599149773421, "color":c1(2)}, {"starting_time": 1599149773421, "ending_time": 1599149789083, "color":c0(2), "label": "15.8s \/ 130.3 MB \/ CACHED"}, {"starting_time": 1599149789083, "ending_time": 1599149789203, "color":c1(2)}]},
+{"label": "salmon_quant (EA-1_S1_L003_R1_001)", "times": [{"starting_time": 1599149850488, "ending_time": 1599149850558, "color":c1(3)}, {"starting_time": 1599149850558, "ending_time": 1599149853204, "color":c2(3), "label": "2.8s \/ 540.5 MB"}, {"starting_time": 1599149853204, "ending_time": 1599149853317, "color":c1(3)}]},
+{"label": "salmon_quant (EA-5_S5_L003_R1_001)", "times": [{"starting_time": 1599149850495, "ending_time": 1599149850561, "color":c1(3)}, {"starting_time": 1599149850561, "ending_time": 1599149853199, "color":c2(3), "label": "2.8s \/ 526.7 MB"}, {"starting_time": 1599149853199, "ending_time": 1599149853343, "color":c1(3)}]},
+{"label": "salmon_quant (EA-4r_S4_L003_R1_001)", "times": [{"starting_time": 1599149850502, "ending_time": 1599149850562, "color":c1(3)}, {"starting_time": 1599149850562, "ending_time": 1599149853187, "color":c2(3), "label": "2.8s \/ 536.3 MB"}, {"starting_time": 1599149853187, "ending_time": 1599149853348, "color":c1(3)}]},
+{"label": "salmon_quant (EA-2_S2_L003_R1_001)", "times": [{"starting_time": 1599149850510, "ending_time": 1599149850565, "color":c1(3)}, {"starting_time": 1599149850565, "ending_time": 1599149853192, "color":c2(3), "label": "2.8s \/ 541.1 MB"}, {"starting_time": 1599149853192, "ending_time": 1599149853352, "color":c1(3)}]},
+{"label": "multiqc", "times": [{"starting_time": 1599149853375, "ending_time": 1599149853419, "color":c1(4)}, {"starting_time": 1599149853419, "ending_time": 1599149869868, "color":c2(4), "label": "16.7s \/ 54.7 MB"}, {"starting_time": 1599149869868, "ending_time": 1599149870028, "color":c1(4)}]},
+{"label": "kal_mapping (reads: EA-1_S1_L003_R1_001)", "times": [{"starting_time": 1599149902470, "ending_time": 1599149902520, "color":c1(5)}, {"starting_time": 1599149902520, "ending_time": 1599149936960, "color":c2(5), "label": "34.6s \/ 853.1 MB"}, {"starting_time": 1599149936960, "ending_time": 1599149937094, "color":c1(5)}]},
+{"label": "kal_mapping (reads: EA-4r_S4_L003_R1_001)", "times": [{"starting_time": 1599149902476, "ending_time": 1599149902522, "color":c1(5)}, {"starting_time": 1599149902522, "ending_time": 1599149937281, "color":c2(5), "label": "34.9s \/ 852.3 MB"}, {"starting_time": 1599149937281, "ending_time": 1599149937418, "color":c1(5)}]},
+{"label": "kal_mapping (reads: EA-5_S5_L003_R1_001)", "times": [{"starting_time": 1599149902483, "ending_time": 1599149902523, "color":c1(5)}, {"starting_time": 1599149902523, "ending_time": 1599149937527, "color":c2(5), "label": "35.2s \/ 853.4 MB"}, {"starting_time": 1599149937527, "ending_time": 1599149937669, "color":c1(5)}]},
+{"label": "kal_mapping (reads: EA-2_S2_L003_R1_001)", "times": [{"starting_time": 1599149902490, "ending_time": 1599149902524, "color":c1(5)}, {"starting_time": 1599149902524, "ending_time": 1599149937450, "color":c2(5), "label": "35.1s \/ 854.1 MB"}, {"starting_time": 1599149937450, "ending_time": 1599149937598, "color":c1(5)}]},
+{"label": "sleuth", "times": [{"starting_time": 1599149937700, "ending_time": 1599149937769, "color":c1(6)}, {"starting_time": 1599149937769, "ending_time": 1599149967825, "color":c2(6), "label": "30.1s \/ -"}]}
+]
+
+
+function getTickFormat() {
+  var MIN = 1000 * 60
+  var HOUR = MIN * 60
+  var DAY = HOUR * 24
+  var delta = (endingMillis - beginningMillis)
+
+  if( delta < 2 * MIN ) {
+    return {
+      format: d3.time.format("%S"),
+      tickTime: d3.time.seconds,
+      tickInterval: 5,
+      tickSize: 6
+    }
+  }
+
+  if( delta < 2 * HOUR ) {
+    return {
+      format: d3.time.format("%M"),
+      tickTime: d3.time.minutes,
+      tickInterval: 5,
+      tickSize: 6
+    }
+  }
+
+  if( delta < 2 * DAY ) {
+    return {
+      format: d3.time.format("%H:%M"),
+      tickTime: d3.time.hours,
+      tickInterval: 1,
+      tickSize: 6
+    }
+  }
+
+  if( delta <= 7 * DAY ) {
+    return {
+      format: d3.time.format("%b %e %H:%M"),
+      tickTime: d3.time.hours,
+      tickInterval: 6,
+      tickSize: 6
+    }
+  }
+
+  return {
+    format: d3.time.format("%b %e"),
+    tickTime: d3.time.days,
+    tickInterval: 1,
+    tickSize: 6
+  }
+}
+
+function getLabelMargin(scale) {
+    $('<span class="labelSpan" style="display: none"></span>').appendTo('body');
+
+    var labelMargin = 0
+    $.each(data, function (key, value) {
+      labelMargin = Math.max(labelMargin, $('.labelSpan').html(value.label).width());
+    });
+
+    $('.labelSpan').remove();
+
+    return (labelMargin * scale);
+}
+
+function render() {
+  handler=null;
+  $("#timeline").empty()
+  $('#label_elapsed').text(elapsed)
+  $('#label_launch').text( d3.time.format('%d %b %Y %H:%M')(new Date(beginningMillis)) )
+
+  var width = $(window).width();
+  var chart = d3.timeline()
+    .stack() // toggles graph stacking
+    .margin({left:getLabelMargin(0.85), right:100, top:0, bottom:0})
+    .tickFormat( getTickFormat() )
+    .rowSeperators('#f5f5f5')
+    .showTimeAxisTick()
+    ;
+  var svg = d3.select("#timeline").append("svg").attr("width", width).datum(data).call(chart);
+}
+
+function hrz() {
+if( handler != null ) clearTimeout(handler)
+  handler = setTimeout(render, 150);
+}
+
+$(document).ready(render)
+$(window).resize(hrz); // resize the applet on window resize
+</script>
+</head>
+
+<body>
+<div>
+  <h3>Processes execution timeline</h3>
+  <p>
+    Launch time: <span id='label_launch'> </span><br>
+    Elapsed time: <span id='label_elapsed'> </span><br>
+    Legend: job wall time / memory usage (RAM) <span id='label_legend'> </span>
+  </p>
+  <div id="timeline"></div>
+</div>
+
+<div id='footer'>
+  Created with Nextflow -- <a href='http://www.nextflow.io' target='_blank'>http://nextflow.io</a>
+</div>
+
+<script type="text/javascript">
+var prot = (("https:" == document.location.protocol) ? "https://" : "http://");
+document.write(unescape("%3Clink href='" + prot + "fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' %3E%3C/link%3E"));
+</script>
+</body>
+</html>

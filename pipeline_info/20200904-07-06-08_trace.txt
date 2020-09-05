@@ -1,0 +1,14 @@
+task_id	hash	native_id	process	name	status	exit	container	cpus	%cpu	memory	%mem	time	attempt	submit	start	complete	rss	vmem	rchar	wchar
+1	0d/d10978	75777	kal_index	kal_index	CACHED	0	-	1	98.2%	-	7.6%	-	1	2020-09-04 01:15:50.886	2020-09-04 01:15:50.914	2020-09-04 01:18:39.695	4.8 GB	4.9 GB	228.8 MB	1.4 GB
+11	5d/dd4d64	220837	kal_mapping	kal_mapping (reads: con-1A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:06:25.304	2020-09-04 07:06:25.378	2020-09-04 07:06:25.435	-	-	-	-
+13	46/f22746	220893	kal_mapping	kal_mapping (reads: con-3A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:06:25.331	2020-09-04 07:06:25.380	2020-09-04 07:06:25.521	-	-	-	-
+8	54/f3fded	220902	kal_mapping	kal_mapping (reads: circ-1A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:06:25.340	2020-09-04 07:06:25.382	2020-09-04 07:06:25.524	-	-	-	-
+10	00/50ea79	220919	kal_mapping	kal_mapping (reads: circ-3A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:06:25.349	2020-09-04 07:06:25.383	2020-09-04 07:06:25.527	-	-	-	-
+12	35/723f09	220950	kal_mapping	kal_mapping (reads: con-2A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:06:25.359	2020-09-04 07:06:25.385	2020-09-04 07:06:25.530	-	-	-	-
+9	bc/90a1b5	220977	kal_mapping	kal_mapping (reads: circ-2A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:06:25.366	2020-09-04 07:06:25.387	2020-09-04 07:06:25.534	-	-	-	-
+5	1b/8b7615	219911	fastqc	fastqc (con-1A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:06:20.058	2020-09-04 07:06:20.159	-	-	-	-	-
+4	2e/2db080	219916	fastqc	fastqc (circ-3A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:06:20.070	2020-09-04 07:06:20.162	-	-	-	-	-
+2	34/66cd57	219930	fastqc	fastqc (circ-1A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:06:20.081	2020-09-04 07:06:20.164	-	-	-	-	-
+6	e6/c650a3	219948	fastqc	fastqc (con-2A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:06:20.089	2020-09-04 07:06:20.165	-	-	-	-	-
+7	d4/a28d4c	219972	fastqc	fastqc (con-3A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:06:20.098	2020-09-04 07:06:20.167	-	-	-	-	-
+3	49/a4aa94	220000	fastqc	fastqc (circ-2A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:06:20.105	2020-09-04 07:06:20.168	-	-	-	-	-

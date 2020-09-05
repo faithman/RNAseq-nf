@@ -1,0 +1,7 @@
+run_accession	condition	sample
+circ-1A	Case	a
+circ-2A	Case	b
+circ-3A	Case	c
+con-1A	control	a
+con-2A	control	b
+con-3A	control	c

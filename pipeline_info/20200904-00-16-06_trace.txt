@@ -1,0 +1,7 @@
+task_id	hash	native_id	process	name	status	exit	container	cpus	%cpu	memory	%mem	time	attempt	submit	start	complete	rss	vmem	rchar	wchar
+4	18/5eba66	229309	fastqc	fastqc (EA-2_S2_L003_R1_001)	COMPLETED	0	-	1	30.4%	-	0.0%	-	1	2020-09-04 00:16:13.385	2020-09-04 00:16:13.428	2020-09-04 00:16:29.095	4.4 MB	139.6 MB	34.7 MB	820.9 KB
+6	c7/f8e377	229293	fastqc	fastqc (EA-5_S5_L003_R1_001)	COMPLETED	0	-	1	31.1%	-	0.0%	-	1	2020-09-04 00:16:13.378	2020-09-04 00:16:13.426	2020-09-04 00:16:29.194	3.2 MB	139.6 MB	34.7 MB	836.7 KB
+5	65/2a4fac	229277	fastqc	fastqc (EA-4r_S4_L003_R1_001)	COMPLETED	0	-	1	35.5%	-	0.2%	-	1	2020-09-04 00:16:13.356	2020-09-04 00:16:13.421	2020-09-04 00:16:29.203	130.3 MB	3.2 GB	34.7 MB	825 KB
+3	93/05fdcc	229280	fastqc	fastqc (EA-1_S1_L003_R1_001)	COMPLETED	0	-	1	36.4%	-	0.0%	-	1	2020-09-04 00:16:13.368	2020-09-04 00:16:13.424	2020-09-04 00:16:29.219	3.1 MB	139.6 MB	34.7 MB	827.1 KB
+1	ba/695ec7	229327	qc_index	qc_index (c)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 00:16:13.393	2020-09-04 00:16:13.430	-	-	-	-	-
+2	42/8d5ba3	229351	kal_index	kal_index	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 00:16:13.401	2020-09-04 00:16:13.431	-	-	-	-	-

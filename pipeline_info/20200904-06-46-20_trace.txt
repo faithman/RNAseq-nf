@@ -1,0 +1,10 @@
+task_id	hash	native_id	process	name	status	exit	container	cpus	%cpu	memory	%mem	time	attempt	submit	start	complete	rss	vmem	rchar	wchar
+1	0d/d10978	75777	kal_index	kal_index	CACHED	0	-	1	98.2%	-	7.6%	-	1	2020-09-04 01:15:50.886	2020-09-04 01:15:50.914	2020-09-04 01:18:39.695	4.8 GB	4.9 GB	228.8 MB	1.4 GB
+9	15/225b4b	194166	kal_mapping	kal_mapping (reads: circ-2A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:46:22.304	2020-09-04 06:46:22.380	2020-09-04 06:46:22.421	-	-	-	-
+8	10/c26cf2	194171	kal_mapping	kal_mapping (reads: circ-1A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:46:22.313	2020-09-04 06:46:22.382	2020-09-04 06:46:22.500	-	-	-	-
+13	5e/2c4a31	194182	kal_mapping	kal_mapping (reads: con-2A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:46:22.321	2020-09-04 06:46:22.383	2020-09-04 06:46:22.504	-	-	-	-
+10	26/164bc7	194197	kal_mapping	kal_mapping (reads: circ-3A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 06:46:22.328	2020-09-04 06:46:22.385	2020-09-04 06:46:22.506	-	-	-	-
+2	4a/aa5348	193770	fastqc	fastqc (circ-1A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:46:22.082	2020-09-04 06:46:22.180	-	-	-	-	-
+4	f6/c6beda	193774	fastqc	fastqc (circ-3A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:46:22.094	2020-09-04 06:46:22.183	-	-	-	-	-
+5	d0/35771f	193788	fastqc	fastqc (con-2A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:46:22.103	2020-09-04 06:46:22.185	-	-	-	-	-
+3	67/e30453	193804	fastqc	fastqc (circ-2A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 06:46:22.110	2020-09-04 06:46:22.188	-	-	-	-	-

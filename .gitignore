@@ -1,0 +1,7 @@
+result*/
+pipeline_info
+work/
+.nextflow*
+.nextflow.history
+report.html*
+trace.txt*

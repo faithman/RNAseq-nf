@@ -1,0 +1,14 @@
+task_id	hash	native_id	process	name	status	exit	container	cpus	%cpu	memory	%mem	time	attempt	submit	start	complete	rss	vmem	rchar	wchar
+1	0d/d10978	75777	kal_index	kal_index	CACHED	0	-	1	98.2%	-	7.6%	-	1	2020-09-04 01:15:50.886	2020-09-04 01:15:50.914	2020-09-04 01:18:39.695	4.8 GB	4.9 GB	228.8 MB	1.4 GB
+11	0f/04ab14	213194	kal_mapping	kal_mapping (reads: con-1A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:00:59.833	2020-09-04 07:00:59.853	2020-09-04 07:01:09.922	-	-	-	-
+9	42/e81e01	213198	kal_mapping	kal_mapping (reads: circ-2A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:00:59.840	2020-09-04 07:00:59.855	2020-09-04 07:01:10.015	-	-	-	-
+8	4f/a6b94e	213202	kal_mapping	kal_mapping (reads: circ-1A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:00:59.847	2020-09-04 07:00:59.857	2020-09-04 07:01:10.018	-	-	-	-
+12	ba/887549	213206	kal_mapping	kal_mapping (reads: con-2A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:00:59.855	2020-09-04 07:00:59.953	2020-09-04 07:01:10.020	-	-	-	-
+10	76/376e4a	213210	kal_mapping	kal_mapping (reads: circ-3A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:00:59.863	2020-09-04 07:00:59.955	2020-09-04 07:01:10.023	-	-	-	-
+13	4f/bf78a8	213873	kal_mapping	kal_mapping (reads: con-3A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 07:01:09.825	2020-09-04 07:01:09.864	2020-09-04 07:01:10.025	-	-	-	-
+7	14/c44492	213073	fastqc	fastqc (con-3A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:00:59.667	2020-09-04 07:00:59.755	-	-	-	-	-
+3	94/555fab	213076	fastqc	fastqc (circ-2A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:00:59.678	2020-09-04 07:00:59.758	-	-	-	-	-
+2	ee/af0fcf	213090	fastqc	fastqc (circ-1A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:00:59.688	2020-09-04 07:00:59.760	-	-	-	-	-
+6	f6/98975e	213108	fastqc	fastqc (con-2A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:00:59.696	2020-09-04 07:00:59.762	-	-	-	-	-
+5	8d/0f2566	213355	fastqc	fastqc (con-1A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:01:04.464	2020-09-04 07:01:04.558	-	-	-	-	-
+4	85/efe5ee	213359	fastqc	fastqc (circ-3A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 07:01:04.471	2020-09-04 07:01:04.560	-	-	-	-	-

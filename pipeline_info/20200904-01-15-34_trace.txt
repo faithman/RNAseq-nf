@@ -1,0 +1,14 @@
+task_id	hash	native_id	process	name	status	exit	container	cpus	%cpu	memory	%mem	time	attempt	submit	start	complete	rss	vmem	rchar	wchar
+2	79/44c591	75757	fastqc	fastqc (circ-1A)	COMPLETED	0	-	1	7.9%	-	0.0%	-	1	2020-09-04 01:15:50.863	2020-09-04 01:15:50.909	2020-09-04 01:15:57.356	5.9 MB	208.4 MB	13.8 MB	348 B
+7	b4/fffee8	75798	fastqc	fastqc (con-3A)	COMPLETED	0	-	1	7.8%	-	0.0%	-	1	2020-09-04 01:15:50.895	2020-09-04 01:15:50.916	2020-09-04 01:15:57.460	5.5 MB	139.6 MB	13.8 MB	346 B
+3	ac/1cbaeb	75852	fastqc	fastqc (circ-2A)	COMPLETED	0	-	1	8.0%	-	0.0%	-	1	2020-09-04 01:15:50.912	2020-09-04 01:15:51.008	2020-09-04 01:15:57.494	27.5 MB	3 GB	13.8 MB	348 B
+5	ef/a1879e	75881	fastqc	fastqc (con-1A)	COMPLETED	0	-	1	35.6%	-	0.0%	-	1	2020-09-04 01:15:50.920	2020-09-04 01:15:51.011	2020-09-04 01:15:57.497	27.9 MB	3 GB	13.8 MB	347 B
+4	aa/9af465	75819	fastqc	fastqc (circ-3A)	COMPLETED	0	-	1	8.5%	-	0.0%	-	1	2020-09-04 01:15:50.902	2020-09-04 01:15:50.917	2020-09-04 01:15:57.561	26.8 MB	3 GB	13.8 MB	348 B
+6	d5/0a7e4d	75760	fastqc	fastqc (con-2A)	COMPLETED	0	-	1	8.1%	-	0.0%	-	1	2020-09-04 01:15:50.874	2020-09-04 01:15:50.912	2020-09-04 01:16:00.140	5.9 MB	208.4 MB	13.8 MB	346 B
+1	0d/d10978	75777	kal_index	kal_index	COMPLETED	0	-	1	98.2%	-	7.6%	-	1	2020-09-04 01:15:50.886	2020-09-04 01:15:50.914	2020-09-04 01:18:39.695	4.8 GB	4.9 GB	228.8 MB	1.4 GB
+8	b4/349dda	81922	kal_mapping	kal_mapping (reads: circ-1A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 01:18:39.762	2020-09-04 01:18:39.795	2020-09-04 01:18:54.845	-	-	-	-
+13	f5/0d4c4b	81930	kal_mapping	kal_mapping (reads: con-2A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 01:18:39.769	2020-09-04 01:18:39.796	2020-09-04 01:18:54.916	-	-	-	-
+10	bd/a6a781	81945	kal_mapping	kal_mapping (reads: circ-3A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 01:18:39.776	2020-09-04 01:18:39.797	2020-09-04 01:18:54.918	-	-	-	-
+12	49/c68532	81964	kal_mapping	kal_mapping (reads: con-3A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 01:18:39.783	2020-09-04 01:18:39.798	2020-09-04 01:18:54.920	-	-	-	-
+11	8d/421f16	81981	kal_mapping	kal_mapping (reads: con-1A)	FAILED	1	-	1	-	-	-	-	1	2020-09-04 01:18:39.790	2020-09-04 01:18:39.799	2020-09-04 01:18:54.922	-	-	-	-
+9	0f/08911c	81918	kal_mapping	kal_mapping (reads: circ-2A)	ABORTED	-	-	1	-	-	-	-	1	2020-09-04 01:18:39.754	2020-09-04 01:18:39.794	-	-	-	-	-

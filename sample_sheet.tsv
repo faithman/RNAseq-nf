@@ -1,0 +1,7 @@
+sample	fq1	fq2
+circ-1A	/home/group2/LPL/pipeline/RNAseq-nf/lndata/circ-1A_1.fq.gz	/home/group2/LPL/pipeline/RNAseq-nf/lndata/circ-1A_2.fq.gz
+circ-2A	/home/group2/LPL/pipeline/RNAseq-nf/lndata/circ-2A_1.fq.gz	/home/group2/LPL/pipeline/RNAseq-nf/lndata/circ-2A_2.fq.gz
+circ-3A	/home/group2/LPL/pipeline/RNAseq-nf/lndata/circ-3A_1.fq.gz	/home/group2/LPL/pipeline/RNAseq-nf/lndata/circ-3A_2.fq.gz
+con-1A	/home/group2/LPL/pipeline/RNAseq-nf/lndata/con-1A_1.fq.gz	/home/group2/LPL/pipeline/RNAseq-nf/lndata/con-1A_2.fq.gz
+con-2A	/home/group2/LPL/pipeline/RNAseq-nf/lndata/con-2A_1.fq.gz	/home/group2/LPL/pipeline/RNAseq-nf/lndata/con-2A_2.fq.gz
+con-3A	/home/group2/LPL/pipeline/RNAseq-nf/lndata/con-3A_1.fq.gz	/home/group2/LPL/pipeline/RNAseq-nf/lndata/con-3A_2.fq.gz
